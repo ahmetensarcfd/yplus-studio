@@ -9,7 +9,7 @@
   <img alt="Built with Claude" src="https://img.shields.io/badge/built%20with-Claude-D97757">
 </p>
 
-<p align="center"><b>yPlus Studio turns a target y⁺ into a complete CFD setup:</b> first cell height, inflation layers, turbulence model, near-wall treatment and discretization schemes. Free, offline, checked against published references. <a href="README.tr.md">🇹🇷 Türkçe</a></p>
+<p align="center"><b>yPlus Studio turns a target y⁺ into a complete CFD setup</b> covering first cell height, inflation layers, turbulence model, near-wall treatment and discretization schemes. Free, offline, checked against published references. <a href="README.tr.md">🇹🇷 Türkçe</a></p>
 
 ## Screenshots
 
@@ -30,7 +30,7 @@
 
 ## Why yPlus Studio?
 
-Every wall-bounded CFD run starts with the same question: what first cell height gives my target y⁺? Most tools stop at that one number. yPlus Studio goes further:
+Every wall-bounded CFD run starts by asking what first cell height gives the target y⁺. Most tools stop at that one number. yPlus Studio goes further.
 
 | | Web y⁺ calculators | yPlus Studio |
 | --- | :---: | :---: |
@@ -46,11 +46,11 @@ Recommendations follow current ANSYS Fluent practice, and each rule is based on 
 
 ## Features
 
-- **Wall-resolution core:** first cell and first node height, friction velocity, wall shear stress, skin friction and boundary layer thickness from a target y⁺, with regime classification (viscous sublayer, buffer, log-law) and wall-resolved vs. wall-function guidance.
-- **Solver-setup advisor:** turbulence model, near-wall treatment, discretization (Second Order Upwind, QUICK, Bounded Central, AUSM at high Mach) and pressure interpolation (PRESTO!, Body Force Weighted), chosen from application type, Re/Ma regime, time treatment and fidelity.
-- **100 quick-setup scenarios:** aerospace, wind and vehicle, marine, internal flow, turbomachinery, heat transfer, multiphase, aeroacoustics, microfluidics, combustion.
-- **Engineering context:** ISA atmosphere (0-20 km, m/ft), Sutherland viscosity, 40+ fluids, and Re, Ma, Fr, We, St, Eu, Pe (plus cell Pe), Gr, Ra, Nu (Churchill-Chu) with regime labels.
-- **The app itself:** a single HTML engine in a native WebView2 window, dark and light themes, PDF export, linked and free modes. Turkish UI with standard English technical terms.
+- **Wall-resolution core** computes first cell and first node height, friction velocity, wall shear stress, skin friction and boundary layer thickness from a target y⁺, and classifies the regime (viscous sublayer, buffer, log-law) with wall-resolved vs. wall-function guidance.
+- **Solver-setup advisor** recommends the turbulence model, near-wall treatment, discretization (Second Order Upwind, QUICK, Bounded Central, AUSM at high Mach) and pressure interpolation (PRESTO!, Body Force Weighted) from application type, Re/Ma regime, time treatment and fidelity.
+- **100 quick-setup scenarios** cover aerospace, wind and vehicle, marine, internal flow, turbomachinery, heat transfer, multiphase, aeroacoustics, microfluidics and combustion.
+- **Engineering context** includes the ISA atmosphere (0-20 km, m/ft), Sutherland viscosity, 40+ fluids, and Re, Ma, Fr, We, St, Eu, Pe (plus cell Pe), Gr, Ra and Nu (Churchill-Chu) with regime labels.
+- **The app itself** is a single HTML engine in a native WebView2 window, with dark and light themes, PDF export, and linked and free modes. The UI is Turkish with standard English technical terms.
 
 ## Physics and validation
 
@@ -68,12 +68,12 @@ cd yplus-studio
 build.bat
 ```
 
-Python 3.9+. `build.bat` installs pywebview, pythonnet and pyinstaller, then produces a single exe. To run without building: `pip install pywebview pythonnet && python app.py`
+Python 3.9+. `build.bat` installs pywebview, pythonnet and pyinstaller, then produces a single exe. You can also run it directly with `pip install pywebview pythonnet && python app.py`
 
 ## Architecture
 
 ```text
-index.html   the whole app: physics engine (window.YPHYS) + UI, vanilla JS/CSS, no runtime deps
+index.html   the whole app, physics engine (window.YPHYS) plus UI, vanilla JS/CSS, no runtime deps
 app.py       pywebview (WebView2) host with an Edge app-mode fallback
 build.bat    one-command PyInstaller build
 ```

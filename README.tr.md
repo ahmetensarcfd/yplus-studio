@@ -2,7 +2,7 @@
   <img src="docs/img/yplus-logo.svg" alt="yPlus Studio" width="820">
 </p>
 
-<p align="center"><b>yPlus Studio, hedef y⁺ değerini eksiksiz bir CFD kurulumuna dönüştürür:</b> ilk hücre yüksekliği, prizma katmanları, türbülans modeli, duvar yaklaşımı ve ayrıklaştırma şemaları. Ücretsiz, çevrimdışı, literatürle doğrulanmış. <a href="README.md">🇬🇧 English</a></p>
+<p align="center"><b>yPlus Studio, hedef y⁺ değerini eksiksiz bir CFD kurulumuna dönüştürür;</b> ilk hücre yüksekliği, prizma katmanları, türbülans modeli, duvar yaklaşımı ve ayrıklaştırma şemalarını kapsar. Ücretsiz, çevrimdışı, literatürle doğrulanmış. <a href="README.md">🇬🇧 English</a></p>
 
 ## Hızlı başlangıç
 
@@ -12,7 +12,7 @@
 
 ## Neden yPlus Studio?
 
-Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studio devam eder: prizma katman tasarımı, türbülans modeli önerisi (SST k-ω, Realizable k-ε, RSM, Transition SST, SBES), ayrıklaştırma ve basınç şeması önerisi. Öneriler güncel ANSYS Fluent pratiğiyle uyumlu ve her kural literatüre dayalı.
+Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studio devam eder; prizma katman tasarımı, türbülans modeli önerisi (SST k-ω, Realizable k-ε, RSM, Transition SST, SBES), ayrıklaştırma ve basınç şeması önerisi sunar. Öneriler güncel ANSYS Fluent pratiğiyle uyumludur ve her kural literatüre dayanır.
 
 - ISA standart atmosfer (0-20 km), Sutherland viskozite, 40+ akışkan
 - Re, Ma, Fr, We, St, Eu, Pe (hücre Pe dahil), Gr, Ra, Nu ve rejim etiketleri
@@ -31,4 +31,4 @@ cd yplus-studio
 build.bat
 ```
 
-MIT lisansı: [LICENSE](LICENSE). Katkı için: [CONTRIBUTING.md](CONTRIBUTING.md).
+Lisans MIT'dir, ayrıntılar [LICENSE](LICENSE) dosyasındadır. Katkı rehberi için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakın.
