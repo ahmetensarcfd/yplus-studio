@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/banner.svg" alt="yPlus Studio" width="820">
+  <img src="docs/img/logo.svg" alt="yPlus Studio" width="820">
 </p>
 
 <p align="center">
