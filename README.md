@@ -58,7 +58,7 @@ Recommendations follow current ANSYS Fluent practice, and each rule is based on 
 y⁺ = u_τ · y / ν        u_τ = √(τ_w / ρ)        τ_w = ½ · C_f · ρ · U²
 ```
 
-Skin friction uses the Schlichting flat-plate correlation with the Blasius laminar limit, plus internal-flow relations for pipes and ducts. A 49-point validation suite checks results against published values (ISA tables, Sutherland at 15 and 100 C, speed of sound, the full wall-quantity chain), and an automated audit of 250,000+ input combinations checks the advisor logic. Final meshing and model decisions are the engineer's responsibility.
+Skin friction uses the Schlichting flat-plate correlation with the Blasius laminar limit, plus internal-flow relations for pipes and ducts. A 49-point validation suite checks results against published values (ISA tables, Sutherland at 15 and 100 °C, speed of sound, the full wall-quantity chain), and an automated audit of 250,000+ input combinations checks the advisor logic. Final meshing and model decisions are the engineer's responsibility.
 
 ## Build from source
 
@@ -68,7 +68,7 @@ cd yplus-studio
 build.bat
 ```
 
-Python 3.9+. `build.bat` installs pywebview, pythonnet and pyinstaller, then produces a single exe. You can also run it directly with `pip install pywebview pythonnet && python app.py`
+Python 3.9+. `build.bat` installs pywebview, pythonnet and pyinstaller, then produces a single exe. You can also run it directly with `pip install pywebview pythonnet && python app.py`.
 
 ## Architecture
 
@@ -84,7 +84,7 @@ English UI, more skin-friction correlations (White, Karman-Schoenherr, Grigson),
 
 ## Contributing and license
 
-PRs are welcome. Physics changes need a literature source, see [CONTRIBUTING.md](CONTRIBUTING.md). MIT licensed, see [LICENSE](LICENSE). To cite it, use [CITATION.cff](CITATION.cff).
+PRs are welcome. Physics changes need a literature source; see [CONTRIBUTING.md](CONTRIBUTING.md). MIT licensed; see [LICENSE](LICENSE). To cite it, use [CITATION.cff](CITATION.cff).
 
 ## Credits
 

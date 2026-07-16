@@ -21,7 +21,7 @@ Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studi
 
 ## Doğrulama
 
-49 noktalı literatür doğrulama takımı (ISA, Sutherland, Schlichting ve Blasius, duvar büyüklükleri) ve öneri motoru için 250.000+ kombinasyonluk otomatik denetim. Nihai ağ ve model kararı mühendisindir.
+Fizik, 49 noktalı literatür doğrulama takımıyla (ISA, Sutherland, Schlichting ve Blasius, duvar büyüklükleri) sınanır; öneri motoru ise 250.000+ kombinasyonluk otomatik denetimden geçer. Nihai ağ ve model kararı mühendisindir.
 
 ## Kaynaktan derleme
 
@@ -31,4 +31,4 @@ cd yplus-studio
 build.bat
 ```
 
-Lisans MIT'dir, ayrıntılar [LICENSE](LICENSE) dosyasındadır. Katkı rehberi için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakın.
+Lisans MIT'dir; ayrıntılar [LICENSE](LICENSE) dosyasındadır. Katkı rehberi için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakın.
