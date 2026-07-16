@@ -8,4 +8,4 @@ labels: enhancement
 
 **Proposed behaviour**
 
-**References** (papers, solver docs, textbooks — required for new physics)
+**References** (papers, solver docs, textbooks; required for new physics)
