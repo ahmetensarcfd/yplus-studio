@@ -21,7 +21,7 @@ Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studi
 
 ## Doğrulama
 
-49 noktalı literatür doğrulama takımı (ISA, Sutherland, Schlichting ve Blasius, duvar büyüklükleri) ve öneri motoru için 262.000+ kombinasyonluk otomatik denetim. Nihai ağ ve model kararı mühendisindir.
+49 noktalı literatür doğrulama takımı (ISA, Sutherland, Schlichting ve Blasius, duvar büyüklükleri) ve öneri motoru için 250.000+ kombinasyonluk otomatik denetim. Nihai ağ ve model kararı mühendisindir.
 
 ## Kaynaktan derleme
 

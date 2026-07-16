@@ -21,4 +21,4 @@ First public release.
 
 ### Validation
 - 49-point numerical validation against published reference values (ISA tables, Sutherland, Schlichting flat-plate correlation, Blasius laminar limit, wall-quantity chain).
-- Automated audit covering 262,000+ input combinations for advisor consistency.
+- Automated audit covering 250,000+ input combinations for advisor consistency.
