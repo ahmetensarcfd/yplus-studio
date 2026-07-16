@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" font-family="Segoe UI, Arial, sans-serif">
+<style>
+.card{opacity:0;animation:cin 7s infinite}
+@keyframes cin{0%{opacity:0;transform:translateY(10px)}6%{opacity:1;transform:none}86%{opacity:1;transform:none}94%,100%{opacity:0}}
+.c1{animation-delay:.4s}.c2{animation-delay:1.1s}.c3{animation-delay:1.8s}.c4{animation-delay:2.5s}
+.dash{stroke-dasharray:7 7;animation:march 1.2s linear infinite}
+@keyframes march{to{stroke-dashoffset:-14}}
+.pulse{animation:pu 2.4s ease-in-out infinite}
+@keyframes pu{0%,100%{opacity:1}50%{opacity:.72}}
+</style>
+<rect width="1200" height="260" rx="12" fill="#1e1e1d"/>
+<rect x="1" y="1" width="1198" height="258" rx="11" fill="none" stroke="#c569b6" stroke-opacity=".18"/>
+<g class="pulse">
+  <rect x="52" y="96" width="176" height="68" rx="6" fill="#58004E"/>
+  <text x="140" y="126" font-size="15" fill="#e9c7e2" text-anchor="middle">hedef</text>
+  <text x="140" y="150" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">y&#8314; = 1</text>
+</g>
+<line class="dash" x1="242" y1="130" x2="316" y2="130" stroke="#c569b6" stroke-width="2.5"/>
+<path d="M316 130 l-9 -5 v10 z" fill="#c569b6"/>
+<g class="card c1">
+  <rect x="332" y="96" width="188" height="68" rx="6" fill="#292928" stroke="#c569b6" stroke-opacity=".45"/>
+  <text x="426" y="126" font-size="14" fill="#aaa099" text-anchor="middle">ilk h&#252;cre</text>
+  <text x="426" y="150" font-size="19" font-weight="700" fill="#f3eee9" text-anchor="middle">&#916;y = 0.035 mm</text>
+</g>
+<g class="card c2">
+  <rect x="536" y="96" width="168" height="68" rx="6" fill="#292928" stroke="#c569b6" stroke-opacity=".45"/>
+  <text x="620" y="126" font-size="14" fill="#aaa099" text-anchor="middle">prizma</text>
+  <text x="620" y="150" font-size="19" font-weight="700" fill="#f3eee9" text-anchor="middle">15 katman</text>
+</g>
+<g class="card c3">
+  <rect x="720" y="96" width="180" height="68" rx="6" fill="#292928" stroke="#c569b6" stroke-opacity=".45"/>
+  <text x="810" y="126" font-size="14" fill="#aaa099" text-anchor="middle">model</text>
+  <text x="810" y="150" font-size="19" font-weight="700" fill="#f3eee9" text-anchor="middle">SST k-&#969;</text>
+</g>
+<g class="card c4">
+  <rect x="916" y="96" width="232" height="68" rx="6" fill="#292928" stroke="#c569b6" stroke-opacity=".45"/>
+  <text x="1032" y="126" font-size="14" fill="#aaa099" text-anchor="middle">&#351;ema</text>
+  <text x="1032" y="150" font-size="18" font-weight="700" fill="#f3eee9" text-anchor="middle">Second Order Upwind</text>
+</g>
+</svg>
