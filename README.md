@@ -44,6 +44,18 @@ Every wall-bounded CFD run starts by asking what first cell height gives the tar
 
 Recommendations follow current Ansys Fluent practice, and each rule is based on published literature.
 
+## Quick setup, 100 ready-made cases
+
+The Senaryo seç button opens a searchable catalog of 100 ready-made setups in 10 domains, from airliners and wind turbines to marine propellers, heat exchangers and microchannels. Picking one fills every input at once (velocity, length scale, fluid, y⁺ target, application type, time treatment) and the full recommendation appears instantly. Each scenario carries literature-based values, so the numbers are realistic starting points rather than placeholders.
+
+![Quick setup catalog with 100 scenarios](docs/img/screenshot-scenarios.png)
+
+## Working modes
+
+The app runs in one of two modes, switched from the left panel. **Entegre** (linked) keeps every tab connected, so the case you define under Kurulum drives the y⁺ calculator, the Reynolds panel, the turbulence advisor and the scheme advisor together, and the summary report always describes one consistent physical case. **Serbest** (free) unlocks each calculator for standalone use, which is handy for quick one-off checks and what-if values without touching the main setup; the recommendation is then refreshed with a manual update button.
+
+![Turbulence advisor following the linked case](docs/img/screenshot-advisor.png)
+
 ## Features
 
 - **Wall-resolution core** computes first cell and first node height, friction velocity, wall shear stress, skin friction and boundary layer thickness from a target y⁺, and classifies the regime (viscous sublayer, buffer, log-law) with wall-resolved vs. wall-function guidance.
