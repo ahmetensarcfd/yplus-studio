@@ -34,13 +34,13 @@ Every wall-bounded CFD run starts with the same question: what first cell height
 
 | | Web y⁺ calculators | yPlus Studio |
 | --- | :---: | :---: |
-| First cell height from y⁺ | ✅ | ✅ |
-| Inflation layer design (count, growth ratio, coverage) | ❌ | ✅ |
-| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | ❌ | ✅ |
-| Discretization and pressure-scheme advisor | ❌ | ✅ |
-| 100 quick-setup scenarios in 10 domains | ❌ | ✅ |
-| ISA atmosphere, Sutherland viscosity, 40+ fluids | ❌ | ✅ |
-| Offline desktop app, no accounts, no telemetry | ❌ | ✅ |
+| First cell height from y⁺ | ✔️ | ✔️ |
+| Inflation layer design (count, growth ratio, coverage) | ❌ | ✔️ |
+| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | ❌ | ✔️ |
+| Discretization and pressure-scheme advisor | ❌ | ✔️ |
+| 100 quick-setup scenarios in 10 domains | ❌ | ✔️ |
+| ISA atmosphere, Sutherland viscosity, 40+ fluids | ❌ | ✔️ |
+| Offline desktop app, no accounts, no telemetry | ❌ | ✔️ |
 
 Recommendations follow current ANSYS Fluent practice, and each rule is based on published literature.
 
