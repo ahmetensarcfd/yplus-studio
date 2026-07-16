@@ -1,43 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="yPlus Studio">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" role="img" aria-label="yPlus Studio">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#232122"/><stop offset="1" stop-color="#1b191a"/>
+      <stop offset="0" stop-color="#232122"/><stop offset="1" stop-color="#1a1819"/>
     </linearGradient>
     <linearGradient id="plum" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#8a2b7d"/><stop offset="1" stop-color="#58004E"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#c569b6" stop-opacity=".9"/><stop offset="1" stop-color="#c569b6" stop-opacity=".25"/>
-    </linearGradient>
   </defs>
-  <rect width="1200" height="300" rx="14" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="298" rx="13" fill="none" stroke="#c569b6" stroke-opacity=".22"/>
-  <rect x="0" y="0" width="1200" height="3" fill="url(#plum)" opacity=".85"/>
-
-  <!-- boundary-layer velocity profile motif -->
-  <g transform="translate(760,40)">
-    <line x1="0" y1="220" x2="380" y2="220" stroke="#c569b6" stroke-opacity=".45" stroke-width="2"/>
-    <line x1="0" y1="0" x2="0" y2="220" stroke="#c569b6" stroke-opacity=".3" stroke-width="1.5"/>
-    <path d="M0,220 C90,214 60,170 150,150 C240,130 210,60 330,28" fill="none" stroke="url(#glow)" stroke-width="3.5" stroke-linecap="round"/>
-    <g stroke="#c569b6" stroke-opacity=".5" stroke-width="2">
-      <line x1="0" y1="205" x2="34" y2="205"/><line x1="0" y1="182" x2="66" y2="182"/>
-      <line x1="0" y1="155" x2="106" y2="155"/><line x1="0" y1="122" x2="152" y2="122"/>
-      <line x1="0" y1="84"  x2="210" y2="84"/><line x1="0" y1="44"  x2="280" y2="44"/>
-    </g>
-    <g fill="#c569b6" fill-opacity=".55" font-family="Segoe UI, Arial, sans-serif" font-size="15">
-      <text x="330" y="243">duvar</text>
-      <text x="8" y="-8">u(y)</text>
-    </g>
-    <!-- first cell marker -->
-    <rect x="0" y="205" width="34" height="15" fill="#8C8714" fill-opacity=".35" stroke="#8C8714" stroke-opacity=".8"/>
-    <text x="42" y="217" fill="#8C8714" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Δy</text>
-  </g>
-
-  <!-- wordmark -->
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="72" y="142" font-size="64" font-weight="800" fill="#f3eee9">yPlus <tspan fill="#c569b6">Studio</tspan></text>
-    <text x="74" y="184" font-size="21" fill="#aaa099">Wall-resolution &amp; solver-setup advisor for CFD</text>
-    <text x="74" y="232" font-size="19" fill="#c569b6" font-style="italic">y⁺ = u_τ · y / ν</text>
-    <rect x="74" y="248" width="150" height="3" rx="1.5" fill="url(#plum)"/>
+  <rect width="1200" height="240" rx="12" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#plum)"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="118" font-size="58" font-weight="800" fill="#f3eee9">yPlus <tspan fill="#c569b6">Studio</tspan></text>
+    <text x="600" y="158" font-size="19" fill="#aaa099">Wall-resolution &amp; solver-setup advisor for CFD</text>
+    <rect x="520" y="180" width="160" height="2.5" rx="1.25" fill="url(#plum)"/>
   </g>
 </svg>
