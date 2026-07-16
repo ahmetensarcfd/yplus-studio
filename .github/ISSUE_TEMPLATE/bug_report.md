@@ -13,5 +13,5 @@ labels: bug
 **Expected result** (for numeric issues, include a hand calculation or a reference value with its source)
 
 **Environment**
-- Windows version:
-- yPlus Studio version:
+- Windows version
+- yPlus Studio version
