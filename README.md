@@ -80,7 +80,7 @@ build.bat    one-command PyInstaller build
 
 ## Roadmap
 
-English UI, more skin-friction correlations (White, Karman-Schoenherr, Grigson), OpenFOAM export presets, STAR-CCM+ and CFX terminology mapping, macOS and Linux packaging.
+Planned for future releases, not yet in v1.0.0: English UI, more skin-friction correlations (White, Karman-Schoenherr, Grigson), OpenFOAM export presets, STAR-CCM+ and CFX terminology mapping, macOS and Linux packaging.
 
 ## Contributing and license
 
