@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>y+ Studio</title>
+<title>yPlus Studio</title>
 <style>
 :root[data-theme="dark"]{
   color-scheme:dark;
@@ -716,7 +716,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
 <div class="toast" id="toast"></div>
 <script>
 /* =====================================================================
-   Y+ STUDIO  Fizik Motoru v9.6  (SI)  -  Fluent is akisi
+   yPlus Studio  Fizik Motoru v9.6  (SI)  -  Fluent is akisi
    ===================================================================== */
 (function (root) {
   "use strict";
@@ -1046,7 +1046,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
 
 </script>
 <script>
-/* ===== y+ STUDIO  Arayuz v9.7 ===== */
+/* ===== yPlus Studio  Arayuz v9.7 ===== */
 (function () {
   "use strict";
   var P = window.YPHYS;
@@ -1482,7 +1482,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
     $("#resBody").innerHTML = s; $("#cta").style.display = "block"; pulse($("#resCard"));
   }
   function renderRev(r, h) {
-    lastSummary = "y+ Studio: hesaplanan y+ = " + fmtP(r.yplus, 6) + " (ilk katman " + fmtP(h * 1e3, 6) + " mm)";
+    lastSummary = "yPlus Studio: hesaplanan y⁺ = " + fmtP(r.yplus, 6) + " (ilk katman " + fmtP(h * 1e3, 6) + " mm)";
     var s = "";
     s += "<div class='hero'><div class='hero-l'>Hesaplanan y⁺ " + copyBtn(fmtP(r.yplus, 6)) + "</div>";
     s += "<div class='hero-v'>" + fmt(r.yplus, 4) + "</div><div class='hero-s'>ilk katman = " + fmt(h * 1e3, 4) + " mm</div></div>";
@@ -1492,7 +1492,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
     $("#resBody").innerHTML = s; $("#cta").style.display = "block"; pulse($("#resCard"));
   }
   function renderTot(r, h1, totM, g, N) {
-    lastSummary = "y+ Studio (toplam kalinliktan): y+ = " + fmtP(r.yplus, 6) + ", ilk katman = " + fmtP(h1 * 1e3, 6) + " mm, toplam = " + fmtP(totM * 1e3, 4) + " mm, N=" + N + ", g=" + g;
+    lastSummary = "yPlus Studio (toplam kalinliktan): y⁺ = " + fmtP(r.yplus, 6) + ", ilk katman = " + fmtP(h1 * 1e3, 6) + " mm, toplam = " + fmtP(totM * 1e3, 4) + " mm, N=" + N + ", g=" + g;
     var s = "";
     s += "<div class='hero'><div class='hero-l'>Hesaplanan y⁺ " + copyBtn(fmtP(r.yplus, 6)) + "</div>";
     s += "<div class='hero-v'>" + fmt(r.yplus, 4) + "</div><div class='hero-s'>ilk katman = " + fmt(h1 * 1e3, 4) + " mm</div></div>";
@@ -1679,7 +1679,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
     html += "</table></div>";
     $("#ozetBody").innerHTML = html;
 
-    lastOzet = "===== y+ STUDIO OZET RAPORU =====\n\n[1] COZUNURLUK\nIlk hucre yuksekligi: " + fmtP(w.dyCentroid * 1e3, 6) + " mm\nIlk dugum yuksekligi: " + fmtP(w.dyNode * 1e3, 6) + " mm\ny+ = " + fmtP(w.yp, 5) + " (" + w.regime.tr + ")\nRe = " + fmtP(w.Re, 6) + "\nToplam prizma kalinligi = " + fmtP(infl.total * 1e3, 6) + " mm, katman sayisi = " + infl.layers + ", g = " + infl.growth + "\n\n[2] TURBULANS MODELI (" + ap + ")\n" + t.name + (t.sub ? " / " + t.sub : "") + "\nAna model: " + (t.family || "-") + "\nDuvar islemi: " + t.nearWall + "\n" + (t.options && t.options.length ? "Secenekler: " + t.options.join(", ") + "\n" : "") + "\n[3] AYRIKLASTIRMA (" + cs.solver + ")\n" + cs.rows.map(function (rw) { return rw.label + ": " + rw.value; }).join("\n") + (onx.length ? "\nEk ayarlar: " + onx.map(function (e) { return e.label; }).join(", ") : "") + "\n";
+    lastOzet = "===== yPlus Studio OZET RAPORU =====\n\n[1] COZUNURLUK\nIlk hucre yuksekligi: " + fmtP(w.dyCentroid * 1e3, 6) + " mm\nIlk dugum yuksekligi: " + fmtP(w.dyNode * 1e3, 6) + " mm\ny⁺ = " + fmtP(w.yp, 5) + " (" + w.regime.tr + ")\nRe = " + fmtP(w.Re, 6) + "\nToplam prizma kalinligi = " + fmtP(infl.total * 1e3, 6) + " mm, katman sayisi = " + infl.layers + ", g = " + infl.growth + "\n\n[2] TURBULANS MODELI (" + ap + ")\n" + t.name + (t.sub ? " / " + t.sub : "") + "\nAna model: " + (t.family || "-") + "\nDuvar islemi: " + t.nearWall + "\n" + (t.options && t.options.length ? "Secenekler: " + t.options.join(", ") + "\n" : "") + "\n[3] AYRIKLASTIRMA (" + cs.solver + ")\n" + cs.rows.map(function (rw) { return rw.label + ": " + rw.value; }).join("\n") + (onx.length ? "\nEk ayarlar: " + onx.map(function (e) { return e.label; }).join(", ") : "") + "\n";
   }
 
   var vmState = { model: "kw", sel: {} };

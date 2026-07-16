@@ -34,13 +34,13 @@ Every wall-bounded CFD run starts with the same question: what first cell height
 
 | | Web y⁺ calculators | yPlus Studio |
 | --- | :---: | :---: |
-| First cell height from y⁺ | yes | yes |
-| Inflation layer design (count, growth ratio, coverage) | no | yes |
-| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | no | yes |
-| Discretization and pressure-scheme advisor | no | yes |
-| 100 quick-setup scenarios in 10 domains | no | yes |
-| ISA atmosphere, Sutherland viscosity, 40+ fluids | no | yes |
-| Offline desktop app, no accounts, no telemetry | no | yes |
+| First cell height from y⁺ | ✅ | ✅ |
+| Inflation layer design (count, growth ratio, coverage) | ❌ | ✅ |
+| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | ❌ | ✅ |
+| Discretization and pressure-scheme advisor | ❌ | ✅ |
+| 100 quick-setup scenarios in 10 domains | ❌ | ✅ |
+| ISA atmosphere, Sutherland viscosity, 40+ fluids | ❌ | ✅ |
+| Offline desktop app, no accounts, no telemetry | ❌ | ✅ |
 
 Recommendations follow current ANSYS Fluent practice, and each rule is based on published literature.
 
@@ -55,7 +55,7 @@ Recommendations follow current ANSYS Fluent practice, and each rule is based on 
 ## Physics and validation
 
 ```text
-y+ = u_tau * y / nu        u_tau = sqrt(tau_w / rho)        tau_w = 0.5 * Cf * rho * U^2
+y⁺ = u_τ · y / ν        u_τ = √(τ_w / ρ)        τ_w = ½ · C_f · ρ · U²
 ```
 
 Skin friction uses the Schlichting flat-plate correlation with the Blasius laminar limit, plus internal-flow relations for pipes and ducts. A 49-point validation suite checks results against published values (ISA tables, Sutherland at 15 and 100 C, speed of sound, the full wall-quantity chain), and an automated audit of 262,000+ input combinations checks the advisor logic. Final meshing and model decisions are the engineer's responsibility.

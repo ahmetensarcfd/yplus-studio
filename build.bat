@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 cd /d "%~dp0"
 echo ==================================================
-echo    Y+ STUDIO  -  .exe derleme (build)
+echo    yPlus Studio  -  .exe derleme (build)
 echo ==================================================
 echo.
 

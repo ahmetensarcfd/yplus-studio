@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use yPlus Studio in academic work, please cite it as below."
 type: software
 title: "yPlus Studio"
-abstract: "Desktop wall-resolution (y+) calculator and CFD solver-setup advisor with literature-validated physics."
+abstract: "Desktop wall-resolution (y⁺) calculator and CFD solver-setup advisor with literature-validated physics."
 authors:
   - family-names: "Sarıgül"
     given-names: "Ahmet Ensar"

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Y+ Studio  native desktop host (pywebview / WebView2).
+yPlus Studio  native desktop host (pywebview / WebView2).
 index.html'i yerel bir pencerede render eder. pywebview/WebView2 calismazsa
 Edge "app" modunda yerel sunucuya geri duser.
 """
