@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/logo.svg" alt="yPlus Studio" width="820">
+  <img src="docs/img/yplus-logo.svg" alt="yPlus Studio" width="820">
 </p>
 
 <p align="center"><b>yPlus Studio, hedef y⁺ değerini eksiksiz bir CFD kurulumuna dönüştürür:</b> ilk hücre yüksekliği, prizma katmanları, türbülans modeli, duvar yaklaşımı ve ayrıklaştırma şemaları. Ücretsiz, çevrimdışı, literatürle doğrulanmış. <a href="README.md">🇬🇧 English</a></p>

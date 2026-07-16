@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/logo.svg" alt="yPlus Studio" width="820">
+  <img src="docs/img/yplus-logo.svg" alt="yPlus Studio" width="820">
 </p>
 
 <p align="center">
@@ -88,4 +88,4 @@ PRs are welcome. Physics changes need a literature source, see [CONTRIBUTING.md]
 
 ## Credits
 
-Built by [Ahmet Ensar Sarıgül](https://github.com/ahmetensarcfd), a mechanical engineering student working on CFD. Developed with heavy use of Anthropic's Claude; all physics was verified against published references.
+Built by [Ahmet Ensar Sarıgül](https://github.com/ahmetensarcfd). Developed with heavy use of Anthropic's Claude; all physics was verified against published references.
