@@ -27,7 +27,9 @@ Senaryo seç düğmesi, 10 alanda 100 hazır kurulumdan oluşan aranabilir bir k
 
 ## Çalışma modları
 
-Uygulama sol panelden seçilen iki moddan birinde çalışır. **Entegre** modda tüm sekmeler bağlıdır; Kurulum'da tanımladığın akış y⁺ hesaplayıcısını, Reynolds panelini, türbülans danışmanını ve şema danışmanını birlikte sürer, özet rapor her zaman tek ve tutarlı bir fiziksel durumu anlatır. **Serbest** mod her hesaplayıcıyı bağımsız kullanıma açar; ana kurulumu bozmadan hızlı kontroller ve olasılık denemeleri için uygundur, öneri ise elle güncelleme düğmesiyle yenilenir.
+<img src="docs/img/modes-toggle.png" width="200" alt="Mod anahtarı">
+
+Uygulama sol panelden seçilen iki moddan birinde çalışır. **Entegre** modda uygulama tek bir bağlı iş akışına dönüşür; tüm sekmeler aynı duruma bağlıdır ve Kurulum'da tanımladığın akış y⁺ hesabını, Reynolds panelini, türbülans danışmanını, şema danışmanını ve özet raporu tek zincir hâlinde besler. **Serbest** modda zincir çözülür ve her bölüm bağımsız çalışır; her hesaplayıcı kendi girdilerini alır, öneri yalnızca güncelle düğmesine bastığında yenilenir.
 
 ![Entegre modda türbülans danışmanı](docs/img/screenshot-advisor.png)
 

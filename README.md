@@ -52,7 +52,9 @@ The Senaryo seç button opens a searchable catalog of 100 ready-made setups in 1
 
 ## Working modes
 
-The app runs in one of two modes, switched from the left panel. **Entegre** (linked) keeps every tab connected, so the case you define under Kurulum drives the y⁺ calculator, the Reynolds panel, the turbulence advisor and the scheme advisor together, and the summary report always describes one consistent physical case. **Serbest** (free) unlocks each calculator for standalone use, which is handy for quick one-off checks and what-if values without touching the main setup; the recommendation is then refreshed with a manual update button.
+<img src="docs/img/modes-toggle.png" width="200" alt="Mode switch">
+
+The app runs in one of two modes, switched from the left panel. **Entegre** (linked) turns the whole app into one connected workflow; every tab is tied to the same case, and the flow you define under Kurulum feeds the y⁺ calculator, the Reynolds panel, the turbulence advisor, the scheme advisor and the summary report as a single chain. **Serbest** (free) breaks the chain, and every section works independently; each calculator accepts its own inputs for quick one-off checks, and the recommendation refreshes only when you press the update button.
 
 ![Turbulence advisor following the linked case](docs/img/screenshot-advisor.png)
 
