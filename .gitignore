@@ -1,0 +1,15 @@
+# Build artifacts
+yplusstudio.exe
+build/
+dist/
+__pycache__/
+*.spec
+*.pyc
+
+# Local application-package helper (not part of the source tree)
+_basvuru-paketi/
+
+# OS noise
+Thumbs.db
+Desktop.ini
+.DS_Store

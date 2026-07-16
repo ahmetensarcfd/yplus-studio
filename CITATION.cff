@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use yPlus Studio in academic work, please cite it as below."
+type: software
+title: "yPlus Studio"
+abstract: "Desktop wall-resolution (y+) calculator and CFD solver-setup advisor with literature-validated physics."
+authors:
+  - family-names: "Sarıgül"
+    given-names: "Ahmet Ensar"
+version: "1.0.0"
+date-released: "2026-07-16"
+license: MIT
+repository-code: "https://github.com/ahmetensar5/yplus-studio"
+keywords:
+  - CFD
+  - y-plus
+  - boundary layer
+  - turbulence modeling
+  - mesh
+  - ANSYS Fluent
