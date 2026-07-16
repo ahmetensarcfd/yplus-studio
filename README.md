@@ -11,16 +11,7 @@
 
 <p align="center"><b>yPlus Studio turns a target y⁺ into a complete CFD setup</b> covering first cell height, inflation layers, turbulence model, near-wall treatment and discretization schemes. Free, offline, checked against published references. <a href="README.tr.md">🇹🇷 Türkçe</a></p>
 
-## Screenshots
-
-![yPlus Studio dark theme](docs/img/screenshot-dark.png)
-
-<details>
-<summary>Light theme</summary>
-
-![yPlus Studio light theme](docs/img/screenshot-light.png)
-
-</details>
+![From a target y⁺ to a complete solver setup](docs/img/hero-flow.svg)
 
 ## Quick start
 
@@ -48,15 +39,13 @@ Recommendations follow current Ansys Fluent practice, and each rule is based on 
 
 The Senaryo seç button opens a searchable catalog of 100 ready-made setups in 10 domains, from airliners and wind turbines to marine propellers, heat exchangers and microchannels. Picking one fills every input at once (velocity, length scale, fluid, y⁺ target, application type, time treatment) and the full recommendation appears instantly. Each scenario carries literature-based values, so the numbers are realistic starting points rather than placeholders.
 
-![Quick setup catalog with 100 scenarios](docs/img/screenshot-scenarios.png)
+![Quick setup catalog, animated overview](docs/img/quick-setup.svg)
 
 ## Working modes
 
-<img src="docs/img/modes-toggle.png" width="200" alt="Mode switch">
-
 The app runs in one of two modes, switched from the left panel. **Entegre** (linked) turns the whole app into one connected workflow; every tab is tied to the same case, and the flow you define under Kurulum feeds the y⁺ calculator, the Reynolds panel, the turbulence advisor, the scheme advisor and the summary report as a single chain. **Serbest** (free) breaks the chain, and every section works independently; each calculator accepts its own inputs for quick one-off checks, and the recommendation refreshes only when you press the update button.
 
-![Turbulence advisor following the linked case](docs/img/screenshot-advisor.png)
+![Entegre and Serbest modes, animated overview](docs/img/working-modes.svg)
 
 ## Features
 
