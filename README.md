@@ -42,7 +42,7 @@ Every wall-bounded CFD run starts by asking what first cell height gives the tar
 | ISA atmosphere, Sutherland viscosity, 40+ fluids | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
 | Offline desktop app, no accounts, no telemetry | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
 
-Recommendations follow current ANSYS Fluent practice, and each rule is based on published literature.
+Recommendations follow current Ansys Fluent practice, and each rule is based on published literature.
 
 ## Features
 

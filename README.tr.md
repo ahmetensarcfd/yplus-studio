@@ -12,7 +12,7 @@
 
 ## Neden yPlus Studio?
 
-Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studio devam eder; prizma katman tasarımı, türbülans modeli önerisi (SST k-ω, Realizable k-ε, RSM, Transition SST, SBES), ayrıklaştırma ve basınç şeması önerisi sunar. Öneriler güncel ANSYS Fluent pratiğiyle uyumludur ve her kural literatüre dayanır.
+Web'deki y⁺ hesaplayıcıları tek bir sayı verir ve orada durur. yPlus Studio devam eder; prizma katman tasarımı, türbülans modeli önerisi (SST k-ω, Realizable k-ε, RSM, Transition SST, SBES), ayrıklaştırma ve basınç şeması önerisi sunar. Öneriler güncel Ansys Fluent pratiğiyle uyumludur ve her kural literatüre dayanır.
 
 - ISA standart atmosfer (0-20 km), Sutherland viskozite, 40+ akışkan
 - Re, Ma, Fr, We, St, Eu, Pe (hücre Pe dahil), Gr, Ra, Nu ve rejim etiketleri
