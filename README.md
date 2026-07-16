@@ -34,13 +34,13 @@ Every wall-bounded CFD run starts with the same question: what first cell height
 
 | | Web y⁺ calculators | yPlus Studio |
 | --- | :---: | :---: |
-| First cell height from y⁺ | ✔️ | ✔️ |
-| Inflation layer design (count, growth ratio, coverage) | ❌ | ✔️ |
-| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | ❌ | ✔️ |
-| Discretization and pressure-scheme advisor | ❌ | ✔️ |
-| 100 quick-setup scenarios in 10 domains | ❌ | ✔️ |
-| ISA atmosphere, Sutherland viscosity, 40+ fluids | ❌ | ✔️ |
-| Offline desktop app, no accounts, no telemetry | ❌ | ✔️ |
+| First cell height from y⁺ | <img src="docs/img/check.svg" width="15" alt="yes"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| Inflation layer design (count, growth ratio, coverage) | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| Turbulence model advisor (SST k-ω, Realizable k-ε, RSM, SBES) | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| Discretization and pressure-scheme advisor | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| 100 quick-setup scenarios in 10 domains | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| ISA atmosphere, Sutherland viscosity, 40+ fluids | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
+| Offline desktop app, no accounts, no telemetry | <img src="docs/img/cross.svg" width="15" alt="no"> | <img src="docs/img/check.svg" width="15" alt="yes"> |
 
 Recommendations follow current ANSYS Fluent practice, and each rule is based on published literature.
 
