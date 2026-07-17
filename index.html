@@ -245,7 +245,7 @@ summary{cursor:pointer;color:var(--dim);font-size:13px;font-weight:600;list-styl
 summary::-webkit-details-marker{display:none}
 summary::before{content:"+ ";color:var(--acc-text);font-weight:800}
 
-.aside{position:sticky;top:86px;display:grid;gap:16px}
+.aside{position:sticky;top:86px;display:grid;gap:16px;align-content:start;max-height:calc(100vh - 170px);overflow-y:auto;overscroll-behavior:contain;padding-right:6px}
 .aside .card{position:relative;overflow:hidden;box-shadow:0 12px 30px -18px rgba(0,0,0,.38)}
 .aside .card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--acc-text) 38%,var(--acc-text) 62%,transparent);opacity:.42;pointer-events:none;z-index:1}
 .aside .hero,.aside .rec-top{position:relative;overflow:hidden;box-shadow:0 12px 26px -16px rgba(88,0,78,.4),inset 0 1px 0 rgba(255,255,255,.12)}
@@ -344,7 +344,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
 ::-webkit-scrollbar{width:10px;height:10px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--acc-text) 42%,transparent);border:3px solid transparent;border-radius:8px;background-clip:padding-box}
-@media(max-width:1140px){.shell{grid-template-columns:1fr}.aside,.tree{position:static}.vm{grid-template-columns:1fr}.topnav{display:none}}
+@media(max-width:1140px){.shell{grid-template-columns:1fr}.aside,.tree{position:static}.aside{max-height:none;overflow:visible;padding-right:0}.vm{grid-template-columns:1fr}.topnav{display:none}}
 </style>
 </head>
 <body>
