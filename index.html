@@ -12,7 +12,7 @@
 :root[data-theme="dark"]{
   color-scheme:dark;
   --r-xs:5px; --r-sm:8px; --r:11px; --r-lg:15px; --r-xl:20px;
-  --bg:#141317; --bg-2:#191820;
+  --bg:#121016; --bg-2:#17161c;
   --veil:rgba(255,255,255,.045);
   --veil-2:rgba(255,255,255,.075);
   --veil-3:rgba(255,255,255,.11);
@@ -22,7 +22,7 @@
   --brd:rgba(255,255,255,.10);
   --brd2:rgba(255,255,255,.20);
   --hair:rgba(255,255,255,.07);
-  --txt:#f4eff2; --dim:#a9a0ab; --dim2:#7d7583;
+  --txt:#f4eff2; --dim:#a9a0ab; --dim2:#928a98;
   --acc:#58004E; --acc-deep:#420039; --acc-mid:#7d1f70;
   --acc-text:#d98ccb; --acc-soft:rgba(197,105,182,.16);
   --gold:#8C8714; --gold-text:#c9c24a;
@@ -47,7 +47,7 @@
   --brd:rgba(64,26,58,.14);
   --brd2:rgba(64,26,58,.26);
   --hair:rgba(64,26,58,.10);
-  --txt:#22131f; --dim:#6b5c68; --dim2:#94848f;
+  --txt:#22131f; --dim:#6b5c68; --dim2:#786d7a;
   --acc:#58004E; --acc-deep:#420039; --acc-mid:#7d1f70;
   --acc-text:#75096a; --acc-soft:rgba(88,0,78,.10);
   --gold:#8C8714; --gold-text:#6f6a0f;
@@ -72,12 +72,12 @@ body{
 body::before{
   content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
   background:
-    radial-gradient(58vw 42vh at 78% -6%, color-mix(in srgb,var(--acc-mid) 26%,transparent), transparent 68%),
-    radial-gradient(46vw 40vh at 4% 102%, color-mix(in srgb,var(--acc) 22%,transparent), transparent 70%),
+    radial-gradient(34vw 30vh at 84% -10%, color-mix(in srgb,var(--acc-mid) 11%,transparent), transparent 72%),
+    radial-gradient(30vw 26vh at 0% 106%, color-mix(in srgb,var(--acc) 9%,transparent), transparent 74%),
     linear-gradient(180deg,var(--bg-2),var(--bg) 55%);
 }
 body::after{
-  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.32;
   background:repeating-linear-gradient(180deg,var(--hair) 0 1px,transparent 1px 116px);
   mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 62%);
   -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 62%);
@@ -1171,7 +1171,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
 
 </script>
 <script>
-/* ===== yPlus Studio  Arayuz v9.7 ===== */
+/* ===== yPlus Studio  Arayuz v9.8 ===== */
 (function () {
   "use strict";
   var P = window.YPHYS;
@@ -1580,7 +1580,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
   function copyBtn(val) { return "<button class='mini' data-copy='" + esc(val) + "'>kopyala</button>"; }
 
   function renderWall(w, infl, nBL) {
-    lastSummary = "y+ Studio cozunurluk\nIlk hucre yuksekligi: " + fmtP(w.dyCentroid * 1e3, 6) + " mm\nIlk dugum yuksekligi: " + fmtP(w.dyNode * 1e3, 6) + " mm\nu_tau: " + fmtP(w.utau, 6) + " m/s, tau_w: " + fmtP(w.tauw, 6) + " Pa\nC_f (" + w.cfName + "): " + fmtP(w.cf, 6) + ", Re: " + fmtP(w.Re, 6) + "\nToplam prizma kalinligi: " + fmtP(infl.total * 1e3, 6) + " mm, katman sayisi=" + infl.layers + ", g=" + infl.growth;
+    lastSummary = "yPlus Studio cozunurluk\nIlk hucre yuksekligi: " + fmtP(w.dyCentroid * 1e3, 6) + " mm\nIlk dugum yuksekligi: " + fmtP(w.dyNode * 1e3, 6) + " mm\nu_tau: " + fmtP(w.utau, 6) + " m/s, tau_w: " + fmtP(w.tauw, 6) + " Pa\nC_f (" + w.cfName + "): " + fmtP(w.cf, 6) + ", Re: " + fmtP(w.Re, 6) + "\nToplam prizma kalinligi: " + fmtP(infl.total * 1e3, 6) + " mm, katman sayisi=" + infl.layers + ", g=" + infl.growth;
     var s = "";
     s += "<div class='hero'><div class='hero-l'>İlk hücre yüksekliği " + copyBtn(fmtP(w.dyCentroid * 1e3, 6)) + "</div>";
     s += "<div class='hero-v'>" + fmt(w.dyCentroid * 1e3, 4) + " <small>mm</small></div>";
