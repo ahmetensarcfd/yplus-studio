@@ -69,7 +69,7 @@ Skin friction uses the Schlichting flat-plate correlation with the Blasius lamin
 
 ## Build from source
 
-```bash
+```bat
 git clone https://github.com/ahmetensarcfd/yplus-studio.git
 cd yplus-studio
 build.bat
