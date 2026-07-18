@@ -39,7 +39,7 @@ Fizik, 49 noktalı literatür doğrulama takımıyla (ISA, Sutherland, Schlichti
 
 ## Kaynaktan derleme
 
-```bat
+```bash
 git clone https://github.com/ahmetensarcfd/yplus-studio.git
 cd yplus-studio
 build.bat

@@ -57,15 +57,17 @@ The app runs in one of two modes, switched from the left panel. **Entegre** (lin
 
 ## Physics and validation
 
-```text
-y⁺ = u_τ · y / ν        u_τ = √(τ_w / ρ)        τ_w = ½ · C_f · ρ · U²
+```ini
+y⁺  = u_τ · y / ν
+u_τ = √(τ_w / ρ)
+τ_w = ½ · C_f · ρ · U²
 ```
 
 Skin friction uses the Schlichting flat-plate correlation with the Blasius laminar limit, plus internal-flow relations for pipes and ducts. A 49-point validation suite checks results against published values (ISA tables, Sutherland at 15 and 100 °C, speed of sound, the full wall-quantity chain), and an automated audit of 250,000+ input combinations checks the advisor logic. Final meshing and model decisions are the engineer's responsibility.
 
 ## Build from source
 
-```bat
+```bash
 git clone https://github.com/ahmetensarcfd/yplus-studio.git
 cd yplus-studio
 build.bat
@@ -75,10 +77,10 @@ Python 3.9+. `build.bat` installs pywebview, pythonnet and pyinstaller, then pro
 
 ## Architecture
 
-```text
-index.html   the whole app, physics engine (window.YPHYS) plus UI, vanilla JS/CSS, no runtime deps
-app.py       pywebview (WebView2) host with an Edge app-mode fallback
-build.bat    one-command PyInstaller build
+```yaml
+index.html: the whole app, physics engine (window.YPHYS) plus UI, vanilla JS/CSS, no runtime deps
+app.py:     pywebview (WebView2) host with an Edge app-mode fallback
+build.bat:  one-command PyInstaller build
 ```
 
 ## Roadmap
