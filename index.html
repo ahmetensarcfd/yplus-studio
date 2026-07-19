@@ -20,7 +20,7 @@
   --surface2:#232028;
   --inset:#141218;
   --brd:rgba(255,255,255,.10);
-  --brd2:rgba(255,255,255,.20);
+  --brd2:rgba(255,255,255,.20);--dash:rgba(255,255,255,.34);
   --hair:rgba(255,255,255,.07);
   --txt:#f4eff2; --dim:#a9a0ab; --dim2:#928a98;
   --acc:#58004E; --acc-deep:#420039; --acc-mid:#7d1f70;
@@ -45,7 +45,7 @@
   --surface2:#f4eff3;
   --inset:#f3eef2;
   --brd:rgba(64,26,58,.14);
-  --brd2:rgba(64,26,58,.26);
+  --brd2:rgba(64,26,58,.26);--dash:rgba(88,0,78,.42);
   --hair:rgba(64,26,58,.10);
   --txt:#22131f; --dim:#6b5c68; --dim2:#786d7a;
   --acc:#58004E; --acc-deep:#420039; --acc-mid:#7d1f70;
@@ -121,7 +121,7 @@ body.wide .aside{display:none}
 /* ---------- sol agac ---------- */
 .tree{
   position:sticky;top:86px;display:flex;flex-direction:column;gap:2px;padding:12px 10px;
-  background:var(--surface);border:1.5px dashed var(--brd2);border-radius:var(--r-lg);
+  background:var(--surface);border:1.5px dashed var(--dash);border-radius:var(--r-lg);
   box-shadow:var(--shadow-2);
 }
 .tree>*{position:relative}
@@ -160,7 +160,7 @@ body.wide .aside{display:none}
 @keyframes panel-in{from{opacity:0}to{opacity:1}}
 
 .card{
-  position:relative;background:var(--surface);border:1.5px dashed var(--brd2);border-radius:var(--r-lg);padding:22px 22px 24px;
+  position:relative;background:var(--surface);border:1.5px dashed var(--dash);border-radius:var(--r-lg);padding:22px 22px 24px;
   box-shadow:var(--shadow-2);
 }
 .card>*{position:relative}
@@ -285,7 +285,7 @@ summary::-webkit-details-marker{display:none}
 summary::before{content:"+ ";color:var(--acc-text);font-weight:800}
 
 /* ---------- sag sutun: olcum cihazi ---------- */
-.aside{position:sticky;top:86px;display:grid;gap:14px;align-content:start;max-height:calc(100vh - 178px);overflow-y:auto;overscroll-behavior:contain;border:1.5px dashed var(--brd2);border-radius:var(--r-lg);padding:14px}
+.aside{position:sticky;top:86px;display:grid;gap:14px;align-content:start;max-height:calc(100vh - 178px);overflow-y:auto;overscroll-behavior:contain;border:1.5px dashed var(--dash);border-radius:var(--r-lg);padding:14px}
 .aside .card{position:relative;overflow:hidden;border:none;box-shadow:0 10px 26px -18px rgba(0,0,0,.34)}
 
 .aside .hero,.aside .rec-top{position:relative;overflow:hidden;box-shadow:0 12px 26px -16px rgba(88,0,78,.4),inset 0 1px 0 rgba(255,255,255,.12)}
@@ -878,6 +878,8 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
   function skinFriction(Re, flow, corr) {
     Re = Math.max(Re, 1e-9);
     var cf, name;
+    var transRe = (flow === "internal") ? 2300 : 5e5;
+    if (Re < transRe) { cf = (flow === "internal") ? 16 / Re : 0.664 / Math.sqrt(Re); return { cf: cf, name: "Laminer" }; }
     if (flow === "internal") {
       if (corr === "petukhov") { cf = Math.pow(0.790 * Math.log(Re) - 1.64, -2) / 4; name = "Petukhov"; }
       else if (corr === "haaland") { var inv = -1.8 * log10(6.9 / Re); cf = (1 / (inv * inv)) / 4; name = "Haaland"; }
@@ -916,7 +918,7 @@ button.stack-i{font-family:inherit;font-weight:600;width:100%;text-align:left;cu
     else { sf = skinFriction(Re, flow, corr); cf = sf.cf; }
     var tauw = 0.5 * cf * rho * U * U, utau = Math.sqrt(tauw / rho);
     var dyNode = (yp * nu) / utau, dyCentroid = 2 * dyNode;
-    var delta = (flow === "external") ? (Re > 1 ? 0.37 * L / Math.pow(Re, 0.2) : 5 * L / Math.sqrt(Re)) : (flow === "internal" ? L / 2 : NaN);
+    var delta = (flow === "external") ? (Re < 5e5 ? 5 * L / Math.sqrt(Re) : 0.37 * L / Math.pow(Re, 0.2)) : (flow === "internal" ? L / 2 : NaN);
     return { nu: nu, Re: Re, cf: cf, cfName: sf.name, tauw: tauw, utau: utau,
              dyNode: dyNode, dyCentroid: dyCentroid, delta: delta,
              regime: classifyYplus(yp), reRegime: reynoldsRegime(Re, flow) };
